@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5236B7572D89B6AC00505775 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236B7562D89B6AC00505775 /* LocationManager.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		5236B73A2D89B4D700505775 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,12 +27,24 @@
 		5236B7282D89B4D600505775 /* FindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5236B7392D89B4D700505775 /* FindMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5236B7432D89B4D700505775 /* FindMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5236B7562D89B6AC00505775 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5236B75B2D89BDB500505775 /* Exceptions for "FindMe" folder in "FindMe" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5236B7272D89B4D600505775 /* FindMe */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5236B72A2D89B4D600505775 /* FindMe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5236B75B2D89BDB500505775 /* Exceptions for "FindMe" folder in "FindMe" target */,
+			);
 			path = FindMe;
 			sourceTree = "<group>";
 		};
@@ -80,7 +88,6 @@
 		5236B71F2D89B4D600505775 = {
 			isa = PBXGroup;
 			children = (
-				5236B7562D89B6AC00505775 /* LocationManager.swift */,
 				5236B72A2D89B4D600505775 /* FindMe */,
 				5236B73C2D89B4D700505775 /* FindMeTests */,
 				5236B7462D89B4D700505775 /* FindMeUITests */,
@@ -242,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5236B7572D89B6AC00505775 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMe/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location to show recent places you visited.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -439,6 +446,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMe/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location to show recent places you visited.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

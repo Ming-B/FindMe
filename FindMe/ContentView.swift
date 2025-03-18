@@ -9,16 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     private let locationManager = LocationManager.shared
+    private let locationModel = LocationModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(locationModel.locations, id: \.self) { location in
+                Text("\(location.coordinate.latitude), \(location.coordinate.longitude)")
+            }
+            .navigationTitle("Where Am I?")
         }
-        .padding()
+        
         .onAppear {
+            locationManager.delegate = locationModel
             locationManager.requestPerms()
+            locationManager.startUpdating()
+            
         }
     }
 }
