@@ -10,6 +10,7 @@ import CoreLocation
 
 
 protocol LocationManagerDelegate {
+    
     func didUpdateLocation(_ location: CLLocation)
     //if location manager wants to call a delegate, need to figure out who is delegate
 }
